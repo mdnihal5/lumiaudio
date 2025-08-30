@@ -19,7 +19,11 @@ export function FetchAudioAndTranscribe() {
             const url = await generateToneUrl(440, 30);
             setAudioUrl(url);
         } catch (e) {
-            setError("Failed to fetch demo audio. Please try again.");
+            if (e instanceof Error) {
+                setError(e.message);
+            } else {
+                setError("Failed to fetch demo audio. Please try again.");
+            }
         } finally {
             setLoading(false);
         }

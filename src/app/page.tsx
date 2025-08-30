@@ -1,4 +1,3 @@
-import { GlassCard } from "@/components/glass-card";
 import { AngledImages } from "@/components/angled-images";
 import { SiteHeader } from "@/components/site-header";
 import Link from "next/link";
