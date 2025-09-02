@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const items: { key: UploadMode; label: string }[] = [
     { key: "upload", label: "Upload Audio + Text" },
-    { key: "fetch", label: "Fetch 30s Audio + Text" },
+    // { key: "fetch", label: "Fetch 30s Audio + Text" },
 ];
 
 export function UploadToggle() {
