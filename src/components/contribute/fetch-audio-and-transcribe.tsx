@@ -36,7 +36,7 @@ export function FetchAudioAndTranscribe() {
       if (!res.ok) throw new Error("Failed to fetch audio");
 
       const data: AudioResponse = await res.json();
-      const audioUrl = `https://transcription-ej6t.onrender.com/${data.key}`;
+      const audioUrl = `https://huggingface.co/api/resolve-cache/datasets/1219Naveen/Asr_data/e4ee6ad4fdf59b797483bab692563c5aa3a15aa1/${data.key}`;
 
       setAudioUrl(audioUrl);
       setAudioId(data._id);
